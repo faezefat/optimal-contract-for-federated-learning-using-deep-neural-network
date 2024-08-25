@@ -29,7 +29,16 @@ The contract must be designed to:
 
 ### Problem Formulation
 The problem of finding the optimal contract can be summarized as follows:
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
+Inline formula: \( a^2 + b^2 = c^2 \)
+
+Block formula:
+$$
+\int_{a}^{b} x^2 dx
+$$
 $$
 \begin{subequations} 
 \label{eq:contract_opt} 
