@@ -30,7 +30,7 @@ The contract must be designed to:
 ### Problem Formulation
 The problem of finding the optimal contract can be summarized as follows:
 
-**
+$$
 \begin{subequations} 
 \label{eq:contract_opt} 
 \begin{align} 
@@ -42,5 +42,5 @@ The problem of finding the optimal contract can be summarized as follows:
 & \quad \forall \theta_i, \hat{\theta}_i \in [\underline{\theta}, \overline{\theta}], i \in \mathcal{N}.
 \end{align}
 \end{subequations}
-**
+$$
 
