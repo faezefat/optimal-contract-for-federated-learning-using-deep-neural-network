@@ -66,7 +66,7 @@ The results for evaluating our proposed model are shown below:
   <img src="https://github.com/faezefat/optimal-contract-for-federated-learning-using-deep-neural-network/blob/main/results/conctraints.png" alt="Evaluation Results">
 </p>
 
-and we also can see satisfaction of (1c), (1d) which indicates IR, IC constraints in this image:
+The following image demonstrates the satisfaction of constraints (1c) and (1d), indicating IR (Individual Rationality) and IC (Incentive Compatibility) constraints:
 <p align="center">
   <img src="https://github.com/faezefat/optimal-contract-for-federated-learning-using-deep-neural-network/blob/main/results/IC_IR.png">
 </p>
