@@ -1,6 +1,37 @@
-# optimal-contract-for-federated-learning-using-deep-neural-network
-# Descreption:
-The goal of this  project to find the optimal contract within federated learning framework in vehicular network. In Federated learning within vehicular network, RSU (RoadSideUnit) acts as task publisher, and vehicles acts as dataowners which they will train their local model based on the task and send their trained local model to RSU to aggragate them and create global model, and this loop will continue. As vehilces use their local sources for training and they can not use their sources for other things, they might not participate in training of model. The RSU will allocate reward to them to persuade them to participate but this reward is based on the data quality of each vehicles use to train their local model. The vehicles report their data quality which is their private information and recieve the reward but the vehicles may report their to recieve more reawrds. The RSU needs to design the contract which this contract contains \[(X_i, R_i)\], $X_i$ is the computational resource that veicle must train the local model with this frequency and $R_i$ is allocated reward for training model and using local resources,  which in this contract maximize its utility while ensure the vehicles gtes non negative utility (Individual Rationality) and report their type truthfully (Incentive Compatibility). The problem of finding otimal contract is summerized as follows:
+# Optimal Contract for Federated Learning Using Deep Neural Networks
+
+## Description
+
+This project focuses on designing an optimal contract within a federated learning framework for vehicular networks. In this scenario:
+
+- The RSU (RoadSide Unit) serves as the task publisher.
+- Vehicles act as data owners, training local models based on the given task and sending their trained models back to the RSU for aggregation into a global model.
+
+### Problem Background
+
+In the federated learning setup within vehicular networks:
+
+- Vehicles use their local computational resources for model training. However, since they can't utilize these resources for other purposes during this process, some vehicles may choose not to participate.
+- To encourage participation, the RSU offers rewards based on the data quality used by each vehicle for training. Since vehicles report their own data quality, which is private information, they might misreport to gain higher rewards.
+
+### Objective
+
+The goal is to design a contract that specifies:
+
+- **\( X_i \)**: The computational resource the vehicle must dedicate to local model training.
+- **\( R_i \)**: The reward allocated for this training and resource usage.
+
+The contract must be designed to:
+
+1. Maximize the utility of the RSU.
+2. Ensure vehicles receive non-negative utility (Individual Rationality).
+3. Encourage truthful reporting of private information (Incentive Compatibility).
+
+### Problem Formulation
+
+The problem of finding the optimal contract can be summarized as follows:
+
+```latex
 \begin{subequations}
 \label{eq:contract_opt}
 \begin{align}
