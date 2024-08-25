@@ -29,27 +29,6 @@ The contract must be designed to:
 
 ### Problem Formulation
 The problem of finding the optimal contract can be summarized as follows:
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+![Formula](https://latex.codecogs.com/png.latex?e%5E%7Bi%5Cpi%7D%20%2B%201%20%3D%200)
 
-Inline formula: \( a^2 + b^2 = c^2 \)
-
-Block formula:
-$$
-\int_{a}^{b} x^2 dx
-$$
-$$
-\begin{subequations} 
-\label{eq:contract_opt} 
-\begin{align} 
-& \max_{(R(\theta_i), x(\theta_i))} U_{TP}\big(x(\theta_i), R(\theta_i)\big) \tag{\ref{eq:contract_opt}},\\
-& \text{s.t.} \quad \sum_{i \in \mathcal{N}}\mathbb{E}_{{\theta_i}}[R({\theta}_i)] \leq R_{max},\\
-& \quad f^{min}_i \leq x(\theta_i) \leq f^{max}_i \label{eq:resorce_limit},\\
-& \quad U_i^{D}\big(\theta_i,R(\theta_i), x(\theta_i)\big) \geq 0, \quad \forall \theta \in [\underline{\theta}, \overline{\theta}], i \in \mathcal{N} \label{eq:IR-con},\\  
-& \quad U_i^{D}\big(\theta_i, R(\theta_i), x(\theta_i)\big) \geq U_i^{D}\big(\theta_i, R(\hat{\theta}_i), x(\hat{\theta}_i)\big) \label{eq:IC-con},\\
-& \quad \forall \theta_i, \hat{\theta}_i \in [\underline{\theta}, \overline{\theta}], i \in \mathcal{N}.
-\end{align}
-\end{subequations}
-$$
 
