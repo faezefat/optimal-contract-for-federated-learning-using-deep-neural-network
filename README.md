@@ -30,7 +30,7 @@ The contract must be designed to:
 ### Problem Formulation
 The problem of finding the optimal contract can be summarized as follows:
 
-```latex
+
 \begin{subequations} 
 \label{eq:contract_opt} 
 \begin{align} 
