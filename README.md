@@ -58,3 +58,10 @@ This project is implemented using the following packages:
 !python train.py
 !python test.py
 
+### Evaluation Results
+
+The results for evaluating our proposed model are shown below:
+
+<p align="center">
+  <img src="path/to/your/image.png" alt="Evaluation Results">
+</p>
