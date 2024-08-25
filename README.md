@@ -65,3 +65,8 @@ The results for evaluating our proposed model are shown below:
 <p align="center">
   <img src="https://github.com/faezefat/optimal-contract-for-federated-learning-using-deep-neural-network/blob/main/results/conctraints.png" alt="Evaluation Results">
 </p>
+
+and we also can see satisfaction of (1c), (1d) which indicates IR, IC constraints in this image:
+<p align="center">
+  <img src="https://github.com/faezefat/optimal-contract-for-federated-learning-using-deep-neural-network/blob/main/results/IC_IR.png">
+</p>
