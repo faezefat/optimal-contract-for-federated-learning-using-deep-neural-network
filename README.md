@@ -39,5 +39,22 @@ The problem of finding the optimal contract can be summarized as follows:
 
 To solve this optimization problem, we will use deep neural networks. Specifically, we will utilize two neural networks to determine \( X_i \) and \( R_i \). We will adjust the network architecture to incorporate the constraints of (1b) and (1c) within the neural network structure and reformulate the other constraints to enable training. Finally, we will define a loss function using the augmented Lagrangian method, with the goal of minimizing this loss through the neural network.
 
+### Implementation
 
+This project is implemented using the following packages:
+
+- TensorFlow
+- Python
+- NumPy
+- Matplotlib
+
+### How to Run the Code
+
+1. Clone the repository or download the code files.
+2. Open the code in Python.
+3. Run the following commands in your terminal:
+
+```bash
+!python train.py
+!python test.py
 
