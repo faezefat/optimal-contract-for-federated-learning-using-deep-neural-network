@@ -29,6 +29,6 @@ The contract must be designed to:
 
 ### Problem Formulation
 The problem of finding the optimal contract can be summarized as follows:
-![Formula](https://quicklatex.com/cache3/71/ql_795895b74615302aaa345d0c06d90571_l3.png)
+![Formula]([https://quicklatex.com/cache3/85/ql_00035d45896495eca030c03f58e75e85_l3.png])
 
 
