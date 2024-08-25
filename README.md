@@ -11,7 +11,7 @@ This project focuses on designing an optimal contract within a federated learnin
 
 In the federated learning setup within vehicular networks:
 
-- Vehicles use their local computational resources for model training. However, since they can't utilize these resources for other purposes during this process, some vehicles may choose not to participate.
+- Vehicles use their local computational resources for model training. However, since they cannot utilize these resources for other purposes during this process, some vehicles may choose not to participate.
 - To encourage participation, the RSU offers rewards based on the data quality used by each vehicle for training. Since vehicles report their own data quality, which is private information, they might misreport to gain higher rewards.
 
 ### Objective
@@ -26,11 +26,18 @@ The contract must be designed to:
 1. Maximize the utility of the RSU.
 2. Ensure vehicles receive non-negative utility (Individual Rationality).
 3. Encourage truthful reporting of private information (Incentive Compatibility).
+4. Ensure that the total reward distributed does not exceed a maximum allowable reward, \( R_{max} \).
+5. Ensure that the computational resource \( X_i \) is within specified frequency bounds, i.e., \( f^{min}_i \leq X_i \leq f^{max}_i \).
 
 ### Problem Formulation
+
 The problem of finding the optimal contract can be summarized as follows:
+
 <p align="center">
   <img src="https://quicklatex.com/cache3/85/ql_00035d45896495eca030c03f58e75e85_l3.png" alt="Formula">
 </p>
+
+To solve this optimization problem, we will use deep neural networks. Specifically, we will utilize two neural networks to determine \( X_i \) and \( R_i \). We will adjust the network architecture to incorporate the constraints of (4) and (5) within the neural network structure and reformulate the other constraints to enable training. Finally, we will define a loss function using the augmented Lagrangian method, with the goal of minimizing this loss through the neural network.
+
 
 
